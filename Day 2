@@ -1,0 +1,30 @@
+Day 2 of 30 · Agents on Chain 🤖
+I used to think giving an AI agent a private key was fine.
+Just paste the key, let it sign transactions. Simple.
+Then I actually thought about what that means.
+A private key is all-or-nothing.
+The agent can do everything your wallet can do.
+Send all your ETH. Drain a protocol. Approve unlimited tokens.
+There's no "only spend 0.01 ETH per day." No "ask me first if it's above $200." No limits at all.
+You're not giving an agent a tool. You're handing it your entire financial identity.
+EOA wallet (old way):
+— Private key = full access
+— No spending limits
+— No audit trail
+— One key compromise = everything gone
+
+ERC-4337 smart account (right way):
+— Programmable rules on-chain
+— Daily spend caps built in
+— Full on-chain audit trail
+— Agent acts within limits you set
+This is exactly what ERC-4337 account abstraction solves.
+
+Instead of handing the agent a private key, you give it a smart contract wallet — with rules baked into the contract itself.
+The agent can act autonomously. But only within boundaries you define on-chain. That's not trust — that's verification by design.
+We're not at "trust the AI." We're building toward "constrain the AI at the infrastructure level."
+And as someone who just spent 3 months studying smart contract exploits — I can tell you that "trust me, the agent is fine" is the same energy as "trust me, the contract is safe."
+We know how that ends.
+The agents are coming. The wallets need to be ready.
+#Solidity #Web3 #AIAgents #ERC4337 #SmartContracts #AccountAbstraction #DeFi
+
