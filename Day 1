@@ -1,0 +1,14 @@
+I spent 3 months going deep on Solidity security.
+Reentrancy. Flash loans. MEV. Proxy exploits. Wrote about all of it.
+But something kept bothering me the whole time.
+All this secure code we write — who's actually going to execute it?
+Not a human. Not anymore.
+AI agents are already executing smart contracts, managing DeFi positions, and facilitating DAO operations with minimal human intervention. 
+Right now. On mainnet.
+And most Solidity developers have no idea how the plumbing works.
+So I'm starting a new series. Agents on Chain. 30 days.
+Here's what we're covering:
+→ Why AI agents can't use regular wallets → ERC-4337, session keys, and how you give an agent a spending limit → LangChain + Solidity: building real on-chain agent actions → Chainlink Functions: smart contracts that call AI → How agents get exploited — prompt injection, access control failures, adversarial inputs
+At the end, I'm building something real. An autonomous DeFi risk monitor that detects and acts — on-chain, with capped authority.
+My Solidity series was about writing secure code.
+This one is about what happens when that code runs itself.
