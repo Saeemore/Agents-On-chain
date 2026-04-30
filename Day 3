@@ -1,0 +1,22 @@
+Nobody told me EOA wallets were a dead end for agents.
+I had to figure it out by trying to build one.
+Here's what broke — and what ERC-4337 fixes.
+
+The problem with EOA wallets for agents:
+— One private key controls everything. No spending limits, no rules
+— Can't batch transactions. Each action = a separate gas fee
+— No gas sponsorship. Agent always needs ETH in its pocket
+— Zero on-chain audit trail. No record of what the agent actually did
+
+This is why ERC-4337 exists. Here's exactly how it works:
+
+1. The agent creates a UserOperation — not a raw transaction. It's a packaged intent: calldata, gas limits, signature, paymaster info. All in one struct.
+2. The UserOp goes into an alt mempool — a separate P2P network. No changes to Ethereum's core protocol needed. Ever.
+3. A Bundler picks it up. Simulates it locally first (if it fails here, it never hits the chain). Bundles multiple UserOps into one Ethereum transaction. Submits to the EntryPoint.
+4. The EntryPoint contract validates it — calls validateUserOp() on your smart account, confirms the signature and gas deposit, then executes the action.
+5. The smart account runs the operation within whatever rules you programmed — spend caps, time locks, multi-sig requirements.
+The part that hit me hardest: Bundlers are the only actors in this whole system that still need an EOA. Everyone else works through smart accounts.
+That's the quiet revolution inside ERC-4337. It doesn't kill EOAs. It just makes them irrelevant for everyone except the infrastructure layer.
+And the Paymaster? That's what lets a protocol sponsor your agent's gas entirely. Your agent acts. Someone else pays. That unlocks a whole new design space for autonomous DeFi.
+This is the plumbing beneath every agent wallet you'll ever build.
+#ERC4337 #AccountAbstraction #Solidity #AIAgents #Web3 #SmartContracts #DeFi
