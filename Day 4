@@ -1,0 +1,27 @@
+I spent days studying Solidity security.
+Reentrancy. Flash loans. MEV. Proxy patterns.
+Then I started looking at AI agents — and realised I'd been studying the wrong half of the problem.
+Here's the distinction that changed how I think about both.
+𝗟𝗟𝗠 = The Thinker
+→ Answers one prompt at a time
+→ Stateless. Forgets after each reply.
+→ Cannot use tools or APIs on its own
+→ Output is text. You still have to act on it.
+
+𝗔𝗜 𝗔𝗴𝗲𝗻𝘁 = The Doer
+→ Works toward a goal across many steps
+→ Has memory — short term and long term
+→ Calls APIs, reads data, triggers real actions
+→ Acts between steps without waiting to be asked
+
+The simplest way I can put it:
+An LLM tells you a position is undercollateralised.
+An agent triggers the liquidation.
+An LLM explains how to execute a swap.
+An agent executes the swap.
+That single word — executes — is where everything changes.
+And for us as blockchain developers, it raises an uncomfortable question.
+If an agent can execute on-chain actions autonomously — sign transactions, move funds, interact with protocols — what controls it?
+A private key gives it everything. No limits. No rules.
+That's not an AI problem. That's a smart contract problem. And we already know how to solve it.
+#AIAgents #Solidity #Web3 #Blockchain #LLM #DeFi #SmartContracts
