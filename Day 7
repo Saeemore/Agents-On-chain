@@ -1,0 +1,41 @@
+20 lines. It actually works. Here's every line explained.
+I kept hearing "just build one."
+So I did.
+And honestly? The hardest part wasn't the code.
+It was understanding what made it an agent — not just a script.
+Here's what I built. And more importantly — why each part matters.
+Now let me break it down like a Solidity dev:
+🧠 ChatOpenAI = the reasoning engine
+→ Think of this as the "brain" you're plugging into your system.
+It decides what to do next at every step.
+🔧 @tool = the agent's only skill right now
+→ This is like an external call in Solidity.
+The agent knows this function exists and calls it when needed.
+📋 prompt = the rulebook
+→ Tells the agent how to think.
+ReAct format — Observe, Reason, Act. Same loop we covered yesterday.
+⚙️ AgentExecutor = the loop runner
+→ Keeps running Observe → Think → Act until the task is complete.
+Your smart contract executes once. This runs until it's done.
+
+What actually happens when you run this?
+The agent doesn't just call get_eth_price() blindly.
+It first thinks:
+
+"The user wants ETH price. I have a tool for that. Let me use it."
+
+Then acts. Then checks the result. Then responds.
+That's the difference between a function and an agent.
+
+What's next?
+Replace that hardcoded $3,200 with a real Chainlink or CoinGecko API call.
+Suddenly — your agent is perceiving real on-chain data.
+That's where it starts getting interesting for DeFi.
+
+
+One question —
+If you swap get_eth_price for a DeFi tool, what's the first one you'd give your agent?
+Aave health check? Uniswap price? Gas estimator?
+Drop it below 👇
+
+#Python #LangChain #AIAgents #Solidity #Web3 #DeFi #Blockchain #30DaysOfAgents
