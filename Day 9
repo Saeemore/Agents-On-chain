@@ -1,0 +1,40 @@
+
+Day 7/30 — Week 1 report . Grading myself publicly.
+No highlights reel. Just the truth.
+Monday I said ChatGPT is an agent.
+By Friday  I understood why that statement is embarrassing.
+Mindset shift: 10/10
+The thing nobody tells you about agents:
+It's not about AI.
+It's about architecture.
+LLM is just one piece. Tools. Memory. Loop. Wallet.
+Remove any one of those — you don't have an agent. You have an expensive autocomplete.
+Hardest thing I wrote this week:
+The ReAct loop post.
+Not because it's complex.
+Because I had to explain it without using a single technical term —
+and still make a Solidity dev go "oh. I've literally written that before."
+Took 4 rewrites.
+Moment that actually hit different:
+Writing 20 lines of Python —
+and watching it think out loud before acting.
+It didn't just call the function. It said "I need the ETH price. I have a tool for that. Let me use it."
+First time I felt like I was watching a junior dev — not running a script.
+That moment changed how I see agents completely.
+What the comments taught me this week:
+Most developers know about agents.
+Almost nobody can explain what makes something an agent vs a chatbot.
+That gap? That's exactly why this series exists.
+One thing I got wrong this week:
+I thought the hardest part of agents was the AI.
+It's not.
+It's the infrastructure underneath.
+Who holds the wallet? Who pays the gas? Who stops it if it goes rogue?
+That's what Week 2 is entirely about.
+And if you're a Solidity dev you're going to feel very at home
+.
+Week 2 starts tomorrow.
+We go from "what is an agent" to "why agents will break without a blockchain."
+The real series starts now.
+What was your biggest takeaway from Week 1?
+One line. Drop it below 👇
